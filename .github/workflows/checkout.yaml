@@ -9,3 +9,7 @@ jobs:
       - run: ls -al
         name: custom run ls -al
       - uses: actions/checkout@v4
+      - run: ls -al
+        name: 2nd ls -al
+      - run: cat .github/workflows/checkout.yaml
+        name: cat
