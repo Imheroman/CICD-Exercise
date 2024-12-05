@@ -1,8 +1,10 @@
-name: test workflow
+name: custom test workflow
 on: push
 
 jobs:
   checkout:
+    name: custom checkout action exercise
     runs-on: ubuntu-latest
     steps:
       - run: ls -al
+        name: custom run ls -al
