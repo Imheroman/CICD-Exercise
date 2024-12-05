@@ -10,3 +10,7 @@ jobs:
       env:
         COMMIT_ID: ${{ github.sha }}
       run: echo "Commit id is $COMMIT_ID"
+    - name: "print pass word"
+      env:
+        MY_PASSWORD: ${{ secrets.PASSWRD }}
+      run: echo my pass word is $MY_PASSWORD
