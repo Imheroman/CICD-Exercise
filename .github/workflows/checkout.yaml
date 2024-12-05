@@ -8,3 +8,4 @@ jobs:
     steps:
       - run: ls -al
         name: custom run ls -al
+      - uses: actions/checkout@v4
